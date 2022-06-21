@@ -1,8 +1,18 @@
+@font-face{
+    font-family: Glegoo-Bold;
+    src : url(fonts/Glegoo-Bold.ttf)
+}
+@font-face{
+    font-family: Glegoo-Regular;
+    src : url(fonts/Glegoo-Regular.ttf)
+}
+
 body{
     margin:0;
     padding:0;
     background: url(img/background.jpg);
     background-size: cover;
+    font-family : Glegoo-Bold;
 }
 .header
 {
@@ -68,9 +78,46 @@ body{
     background-color: white;
     min-height:calc(100vh - 44px);
     width:40%;
+    min-width:323px;
 }
 
 .right-container
 {
+    display:flex;
+    flex-direction:row;
+    width:60%;
+    margin-top:280px;
+}
+#sellout-text{
+    font-size:2rem;
+    text-align:center;
+    margin-top:40px;
     
+}
+#king-header-left
+{
+    position:absolute;
+    background-color:black;
+    flex-direction:row;
+    opacity: 0.9;
+    height:80px;
+    width:40%;
+    min-width:323px;
+    margin-top:123px;
+}
+#king-header-right
+{
+    background-color:black;
+    opacity: 0.7;
+    flex-direction:row;
+    height:80px;
+    width:90%;
+}
+
+#mask{
+    width:0;
+    height:0;
+    border-bottom: 80px solid black;
+    border-right: 80px solid transparent;
+    opacity: 0.7;
 }

@@ -20,8 +20,30 @@
       </div>
     </div>
     <div class="main-container">
-      <div class="left-container">s</div>
-      <div class="right-container"></div>
+      <div class="left-container">
+        <div id="sellout-text">This is your chance!<br />Sign up now</div>
+        <div id="king-header-left"></div>
+      </div>
+      <div class="right-container">
+        <div id="king-header-right">King</div>
+        <div id="mask"></div>
+      </div>
     </div>
+
+    <script>
+      windowListener = window.addEventListener("resize", () => {
+        changeMargin();
+      });
+
+      function changeMargin() {
+        let container = document.getElementById("king-header-left");
+        width = container.offsetWidth;
+        if (width == 323) {
+          container.style.marginTop = "64.81px";
+        } else {
+          container.style.marginTop = "123px";
+        }
+      }
+    </script>
   </body>
 </html>
