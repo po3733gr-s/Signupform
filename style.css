@@ -79,8 +79,52 @@ body{
     min-height:calc(100vh - 44px);
     width:40%;
     min-width:323px;
+    border-right-style:solid;
+    border-width:2px;
+    border-color:black;
+    opacity:0.95;
+}
+#signup-form{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    padding:40px 20px;
+}
+#signup-container{
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:190px;
+    border:1px solid;
+    border-radius:3px;
+    box-shadow: 3px 3px 3px;
+    margin-right:20px;
+    margin-left:20px;
 }
 
+label{
+    padding:0;
+    margin-bottom:0;
+    font-size:12px;
+}
+input{
+    height:20px;
+    width:180px;
+}
+input,label
+{
+    float:left;
+    margin:auto 15px 0px 15px;
+}
+.form-container{
+    padding:4px;
+    width: 250px;
+    margin-left:auto;
+    margin-right:auto;
+    justify-content:center;
+}
+.form-container:not(:first-child){
+    margin-top:5px;
+}
 .right-container
 {
     display:flex;
@@ -91,8 +135,8 @@ body{
 #sellout-text{
     font-size:2rem;
     text-align:center;
-    margin-top:40px;
-    
+    margin-top:70px;
+    align-items:center;
 }
 #king-header-left
 {
@@ -103,7 +147,7 @@ body{
     height:80px;
     width:40%;
     min-width:323px;
-    margin-top:123px;
+    margin-top:93px;
 }
 #king-header-right
 {
@@ -111,7 +155,7 @@ body{
     opacity: 0.7;
     flex-direction:row;
     height:80px;
-    width:90%;
+    width:80%;
 }
 
 #mask{

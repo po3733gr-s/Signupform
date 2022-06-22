@@ -23,6 +23,34 @@
       <div class="left-container">
         <div id="sellout-text">This is your chance!<br />Sign up now</div>
         <div id="king-header-left"></div>
+        <div id="signup-container">
+          <form id="signup-form" action="#" method="get">
+            <div class="form-container">
+              <div><label for="firstname">FIRST NAME</div>
+              <input type="name" id="firstname" name="firstname">
+            </div>
+            <div class="form-container">
+              <div><label for="lastname">LAST NAME</div>
+              <input type="name" id="lastname" name="lastname">
+            </div>
+            <div class="form-container">
+              <div><label for="email">EMAIL</div>
+              <input type="name" id="email" name="email">
+            </div>
+            <div class="form-container">
+              <div><label for="tel">PHONE NUMBER</div>
+              <input type="tel" id="tel" name="tel">
+            </div>
+            <div class="form-container">
+              <div><label for="password">PASSWORD</div>
+              <input type="password" id="password" name="password">
+            </div>
+            <div class="form-container">
+              <div><label for="confirmpassword">CONFIRM PASSWORD</div>
+              <input type="password" id="confirmpassword" name="confirmpassword">
+            </div>
+          </form>
+        </div>
       </div>
       <div class="right-container">
         <div id="king-header-right">King</div>
@@ -36,12 +64,16 @@
       });
 
       function changeMargin() {
-        let container = document.getElementById("king-header-left");
-        width = container.offsetWidth;
-        if (width == 323) {
-          container.style.marginTop = "64.81px";
+        let banner = document.getElementById("king-header-left");
+        let signupcontainer = document.getElementById("signup-container");
+        width = banner.offsetWidth;
+        console.log(width);
+        if (width == 323 || width <= 327.4) {
+          banner.style.marginTop = "34.81px";
+          signupcontainer.style.marginTop = "131.19px";
         } else {
-          container.style.marginTop = "123px";
+          banner.style.marginTop = "93px";
+          signupcontainer.style.marginTop = "190px";
         }
       }
     </script>
