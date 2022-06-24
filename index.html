@@ -51,9 +51,12 @@
             </div>
           </form>
         </div>
+        <div id="login-button"><button type="button" id="create-button">Create Account</button>
+        </div>
+        <div id="sign-in">Already a member? <a href="#">Sign in</a></div>
       </div>
       <div class="right-container">
-        <div id="king-header-right">King</div>
+        <div id="king-header-right"><span>LOOK AT MY SUIT</span></div>
         <div id="mask"></div>
       </div>
     </div>
@@ -64,15 +67,18 @@
       });
 
       function changeMargin() {
+        let check_height = document.getElementById("signup-form");
         let banner = document.getElementById("king-header-left");
         let signupcontainer = document.getElementById("signup-container");
-        width = banner.offsetWidth;
-        console.log(width);
-        if (width == 323 || width <= 327.4) {
-          banner.style.marginTop = "34.81px";
-          signupcontainer.style.marginTop = "131.19px";
+        height = check_height.offsetHeight;
+        console.log(height);
+        if (height > 265) {
+          banner.style.display = "none";
+          signupcontainer.style.marginTop = "20px";
+          console.log("less")
         } else {
-          banner.style.marginTop = "93px";
+          console.log("else")
+          banner.style.display = "block";
           signupcontainer.style.marginTop = "190px";
         }
       }
